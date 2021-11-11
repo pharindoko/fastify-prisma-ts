@@ -17,7 +17,6 @@ export interface FastifyDynamicSwaggerExtendedOptions
 }
 const fastifySwaggerExtendedOptions: FastifyDynamicSwaggerExtendedOptions = {
   routePrefix: "/documentation",
-  // @ts-ignore
   refResolver: {
     buildLocalReference(json: any) {
       return json.$id;
